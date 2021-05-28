@@ -18,7 +18,8 @@ func bai1() {
     print("Nhập vào một số:", terminator: " ")
     let numString = readLine()
     
-    guard let numString = numString, let number = Int(numString) else {
+    guard let numStringNew = numString, let number = Int(numStringNew) else {
+        print(-1)
         return
     }
     if number < 1 {
@@ -59,7 +60,7 @@ func soDoiXung() {
     print("Nhập vào một số:", terminator: " ")
     let numberString = readLine()
     
-    guard let numberString = numberString, let number = Int(numberString) else {
+    guard let numberStringNew = numberString, let number = Int(numberStringNew) else {
         return
     }
     if number == soDao(number) {
@@ -89,7 +90,7 @@ func tinhCuocTaxi() {
     print("Số km đã đi:", terminator: " ")
     let numberString = readLine()
     
-    guard let numberString = numberString, let number = Float(numberString) else {
+    guard let numberStringNew = numberString, let number = Float(numberStringNew) else {
         return
     }
     var soTien:Float = 0
